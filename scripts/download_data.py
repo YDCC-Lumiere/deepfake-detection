@@ -2,12 +2,11 @@
 WARNING: you must download the authentication file from https://www.kaggle.com/settings
 and move it to ~/.kaggle directory
 """
-import argparse
 import os
 
 from kaggle.api.kaggle_api_extended import KaggleApi
 
-DEEPFAKERAPP_URL = "huynhngotrungtruc/fsd-deepfakerapp"
+DEEPFAKERAPP_URL = "huynhngotrungtruc/faceswap-thesis"
 
 def download_dataset():
     url = DEEPFAKERAPP_URL
