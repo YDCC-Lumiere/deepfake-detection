@@ -6,3 +6,4 @@ build/
 fsd2024.egg-info/
 logs/
 configs/
+jobs/
