@@ -12,8 +12,8 @@ def download_dataset():
     url = DEEPFAKERAPP_URL
     api = KaggleApi()
     api.authenticate()
-    os.makedirs("dataset", exist_ok=True)
-    api.dataset_download_files(url, path="dataset", unzip=True, force=True)
+    os.makedirs("data", exist_ok=True)
+    api.dataset_download_files(url, path="data", unzip=True, force=True)
 
 if __name__ == "__main__":
     download_dataset()

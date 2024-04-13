@@ -1,2 +1,5 @@
-dataset/
+data/
 *.out
+__pycache__/
+build/
+fsd2024.egg-info/
