@@ -9,6 +9,7 @@ def filter_csv(input_file, output_file):
         
         # Tạo một list chứa tất cả các dòng (trừ header)
         lines = [line for line in reader]
+    lines.sort()
 
     # Tính toán số dòng cần lọc
     num_lines_to_keep = int(len(lines) * 0.1)
@@ -16,7 +17,8 @@ def filter_csv(input_file, output_file):
     # Lọc ra 10% dòng ngẫu nhiên
     random_lines = []
     for i in range(num_lines_to_keep):
-        random_lines.append(lines[i])
+        random_lines.append(lines[i*10])
+    random.shuffle(random_lines)
 
     # Ghi vào file output
     with open(output_file, 'w', newline='') as csvfile:
