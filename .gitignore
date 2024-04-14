@@ -5,6 +5,5 @@ __pycache__/
 build/
 fsd2024.egg-info/
 logs/
-configs/
 jobs/
 temp/
